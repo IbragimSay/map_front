@@ -5,9 +5,9 @@ import classNames from "classnames";
 
 export default function App() {
   const [arr, setArr] = useState([
-    { id: 1, title: "one", activ: true },
-    { id: 2, title: "deti", activ: false },
-    { id: 3, title: "para", activ: false }
+    { id: 1, text: "Один", title: "one", activ: true },
+    { id: 2, text: "с Детьми", title: "deti", activ: false },
+    { id: 3, text: "Пара", title: "para", activ: false }
   ])
   const [activ, setActiv] = useState('')
   const [filter, setFilter] = useState(arr.filter(e => {
@@ -23,7 +23,7 @@ export default function App() {
           : { ...i, activ: false }
       ))
   }
-  let [fil, setFil] = useState('para')
+  let [fil, setFil] = useState('one')
 
 
   return (
@@ -37,7 +37,7 @@ export default function App() {
               setFil(i.title)
             }} className="box"><div className={classNames("activ", {
               ["activ_not"]: i.activ
-            })}></div><p>{i.title}</p></div>
+            })}></div><p>{i.text}</p></div>
           ))
         }
       </div>
