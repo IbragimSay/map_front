@@ -1,4 +1,4 @@
-.page{
+.page {
   margin: auto;
   max-width: 1200px;
   width: 100%;
@@ -7,7 +7,7 @@
   column-gap: 20px;
   margin-top: 150px;
 }
-.filter{
+.filter {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,21 +15,23 @@
   background-color: #fff;
   height: 100%;
 }
-.box{
+.box {
   display: flex;
   align-items: center;
   column-gap: 20px;
   cursor: pointer;
 }
-.activ{
+.activ {
   width: 20px;
   height: 20px;
   background-color: red;
-
 }
 
-.activ_not{
+.activ_not {
   width: 20px;
   height: 20px;
   background-color: green;
+}
+.leaflet-control-attribution {
+  display: none;
 }
