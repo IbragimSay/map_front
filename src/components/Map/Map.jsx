@@ -13,19 +13,19 @@ export function Map({ filValue }) {
     { id: 2, position: [37.631857, 55.829856], img: "", time: 20, title: "Фонтан Дружба народов", teg: "deti" },
     { id: 5, position: [37.638585, 55.830391], img: "", time: 20, title: "ВДНХ Экспо", teg: "deti" },
     { id: 2, position: [37.620173, 55.836090], img: "", time: 20, title: "Павильон № 34 Российский космос: создавая будущее", teg: "one" },
-    { id: 9, position: [37.629901, 55.835087], img: "https://avatars.mds.yandex.net/get-altay/13091609/2a0000018e2e4fb4bc2aaf869219835814aa/XXXL", time: 20, title: "Совиный дом", teg: "one" },
+    { id: 9, position: [37.629901, 55.835087], img: "", time: 20, title: "Совиный дом", teg: "one" },
     { id: 3, position: [37.633566, 55.828773], img: "", time: 20, title: "Павильон № 1 Первые в России – Стране возможностей!", teg: "one" },
     { id: 6, position: [37.618359, 55.832956], img: "", time: 20, title: "Москвариум", teg: "para" },
     { id: 6, position: [37.634592, 55.833356], img: "", time: 20, title: "Дом культуры", teg: "para" },
     { id: 4, position: [37.637522, 55.829654], img: "", time: 20, title: "Алые паруса", teg: "para" },
-    { id: 13, position: [37.616377, 55.838392], img: "", title: "Третий Каменский пруд", teg: "druzy" },
-    { id: 12, position: [37.616686, 55.834452], img: "", title: "Мичуринский сад", teg: "druzy" },
+    { id: 13, position: [37.616377, 55.838392], img: "",time: 20,  title: "Третий Каменский пруд", teg: "druzy" },
+    { id: 12, position: [37.616686, 55.834452], img: "",time: 20, title: "Мичуринский сад", teg: "druzy" },
     { id: 11, position: [37.623444, 55.835471], img: "", time: 20, title: "Смайл Парк", teg: "druzy" },
 
-    { id: 4, position: [37.637633, 55.826303], img: "", time: 20, title: "aly parusa", teg: "deti" },
-    { id: 4, position: [37.637633, 55.826303], img: "", time: 20, title: "aly parusa", teg: "one" },
-    { id: 4, position: [37.637633, 55.826303], img: "", time: 20, title: "aly parusa", teg: "para" },
-    { id: 4, position: [37.637633, 55.826303], img: "", time: 20, title: "aly parusa", teg: "druzy" },
+    { id: 4, position: [37.637633, 55.826303], img: "", time: 0, title: "aly parusa", teg: "deti" },
+    { id: 4, position: [37.637633, 55.826303], img: "", time: 0, title: "aly parusa", teg: "one" },
+    { id: 4, position: [37.637633, 55.826303], img: "", time: 0, title: "aly parusa", teg: "para" },
+    { id: 4, position: [37.637633, 55.826303], img: "", time: 0, title: "aly parusa", teg: "druzy" },
   ])
   const [pointClone, setPointerClone] = useState([
 
