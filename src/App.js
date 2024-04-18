@@ -6,7 +6,7 @@ import classNames from "classnames";
 export default function App() {
   const [arr, setArr] = useState([
     { id: 1, text: "Один", title: "one", activ: true },
-    { id: 2, text: "с Детьми", title: "deti", activ: false },
+    { id: 2, text: "Семья", title: "deti", activ: false },
     { id: 3, text: "Пара", title: "para", activ: false }
   ])
   const [activ, setActiv] = useState('')
@@ -30,18 +30,23 @@ export default function App() {
     <div className="page"> {/* Контейнер с явно заданной высотой */}
 
       <div className="filter">
+        <h2 className="filter__title">Категории</h2>
+        <div className="filter__block">
         {
           arr.map(i => (
-            <div key={i.id} onClick={() => {
+            <div className={classNames("box", {
+              ["box__activ"]: i.activ
+            })} key={i.id} onClick={() => {
               tabe(i.id)
               setFil(i.title)
-            }} className="box"><div className={classNames("activ", {
-              ["activ_not"]: i.activ
-            })}></div><p>{i.text}</p></div>
+            }}>{i.text}</div>
           ))
         }
+        </div>
       </div>
+      
       <Map filValue={fil} />
+      
     </div>
   );
 
