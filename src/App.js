@@ -15,7 +15,6 @@ export default function App() {
     if (e.activ) return e
   }))
 
-
   const tabe = (id) => {
     setArr(prive =>
       prive.map(i =>

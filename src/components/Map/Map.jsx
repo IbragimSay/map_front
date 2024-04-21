@@ -253,7 +253,11 @@ export function Map({ filValue }) {
     },
   ]);
   const [time, setTime] = useState(0);
-
+  const convertMin = (min) => {
+    const hours = Math.floor(min / 60);
+    const minuts = Math.floor(min % 60);
+    setTime(`${hours} час  ${minuts} минут`);
+  };
   const fil = filValue;
   let dataC = [];
   const LeafIcon = L.Icon.extend({
@@ -266,41 +270,42 @@ export function Map({ filValue }) {
   ar = pointClone.filter((i) => i.teg == fil);
 
   const getPointer = async () => {
-    dataC = pointer.filter((i) => i.teg == fil);
-    let time2 = 0;
-    let argen = [];
-    dataC.forEach((i) => {
-      argen.push(i.position);
-      console.log(i.time);
-      time2 = time2 + i.time;
-    });
-    setTime(time2);
-    const cordinat = await axios.post(
-      `https://graphhopper.com/api/1/route?key=cf044edf-53fa-411f-8b5d-80c0f2ff4875`,
-      {
-        points: argen,
-        snap_preventions: ['motorway', 'ferry', 'tunnel'],
-        details: ['road_class', 'surface'],
-        profile: 'foot',
-        locale: 'en',
-        instructions: true,
-        calc_points: true,
-        points_encoded: false,
-      },
-    );
-    const arr2 = cordinat.data.paths[0].points.coordinates.map((i) => {
-      return i.reverse();
-    });
-    setLine(arr2);
-    console.log(arr2);
+    try {
+      dataC = pointer.filter((i) => i.teg == fil);
+      let time2 = 0;
+      let argen = [];
+      dataC.forEach((i) => {
+        argen.push(i.position);
+
+        time2 = time2 + i.time;
+      });
+      convertMin(time2);
+
+      const cordinat = await axios.post(
+        `https://graphhopper.com/api/1/route?key=cf044edf-53fa-411f-8b5d-80c0f2ff4875`,
+        {
+          points: argen,
+          snap_preventions: ['motorway', 'ferry', 'tunnel'],
+          details: ['road_class', 'surface'],
+          profile: 'foot',
+          locale: 'en',
+          instructions: true,
+          calc_points: true,
+          points_encoded: false,
+        },
+      );
+      const arr2 = cordinat.data.paths[0].points.coordinates.map((i) => {
+        return i.reverse();
+      });
+      setLine(arr2);
+    } catch (e) {
+      setLine([]);
+      ar = [];
+    }
   };
   useEffect(() => {
     getPointer();
   }, [fil]);
-
-  const leafIcon = new LeafIcon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/1201/1201643.png',
-  });
   const mestoIcon = new LeafIcon({ iconUrl: 'image/point.svg' });
   return (
     <div className="contener">
@@ -309,8 +314,7 @@ export function Map({ filValue }) {
           attribution='<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        
-        {ar.map((i) => (
+        {pointClone.map((i) => (
           <Marker icon={mestoIcon} position={i.position}>
             <Popup className="custom_popup">
               <img className="image" src={i.img} alt="" />
@@ -320,9 +324,7 @@ export function Map({ filValue }) {
         ))}
         <Polyline dashArray={[5, 5]} positions={line} color="#000" />
       </MapContainer>
-      <div className="contener__time">
-        Средняя продолжительность маршрута: <span> {time} M</span>
-      </div>
+      <div className="contener__time">Средняя продолжительность маршрута: {time}</div>
     </div>
   );
 }
