@@ -35,7 +35,7 @@ export function Map({ tagValue }) {
       });
       convertTime(travel_time);
 
-      const cordinat = await axios.post(
+      const coordinates = await axios.post(
         `https://graphhopper.com/api/1/route?key=cf044edf-53fa-411f-8b5d-80c0f2ff4875`,
         {
           points: postitionRequest,
@@ -48,7 +48,7 @@ export function Map({ tagValue }) {
           points_encoded: false,
         },
       );
-      const lineData = cordinat.data.paths[0].points.coordinates.map((i) => {
+      const lineData = coordinates.data.paths[0].points.coordinates.map((i) => {
         return i.reverse();
       });
       setLine(lineData);
