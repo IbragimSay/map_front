@@ -10,23 +10,28 @@ export function Map({ tagValue }) {
   const [line, setLine] = useState([]);
   const [time, setTime] = useState(0);
 
+  // Функция для вывода получения красив ого вывода времени
   const convertTime = (min) => {
     const hours = Math.floor(min / 60);
     const minuts = Math.floor(min % 60);
     setTime(`${hours} час  ${minuts} минут`);
   };
 
+  // Установка размера поинта
   const LeafIcon = L.Icon.extend({
     options: {
       iconSize: [38, 38],
     },
   });
 
-  let positionFilter = point_data.filter((i) => i.teg == tagValue);
+  // Получает только выборный по тегу Координаты
+  let positionFilter = point_data.filter((i) => i.tag == tagValue);
 
+  // Получить навигация
   const getRoute = async () => {
     try {
-      positionFilter = position_data.filter((i) => i.teg == tagValue);
+      // Получает только выборный по тегу Координаты
+      positionFilter = position_data.filter((i) => i.tag == tagValue);
       let travel_time = 0;
       let postitionRequest = [];
       positionFilter.forEach((i) => {
@@ -35,6 +40,7 @@ export function Map({ tagValue }) {
       });
       convertTime(travel_time);
 
+      // Запрос на поучение маршрута
       const coordinates = await axios.post(
         `https://graphhopper.com/api/1/route?key=cf044edf-53fa-411f-8b5d-80c0f2ff4875`,
         {
@@ -60,6 +66,7 @@ export function Map({ tagValue }) {
   useEffect(() => {
     getRoute();
   }, [tagValue]);
+  // Установка Картинки поинта
   const mestoIcon = new LeafIcon({ iconUrl: 'image/point.svg' });
   return (
     <div className="contener">

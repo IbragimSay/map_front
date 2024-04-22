@@ -5,7 +5,7 @@ export default [
       img: '',
       time: 40,
       title: 'Музей космонавтики',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export default [
       img: '',
       time: 20,
       title: 'Фонтан Дружба народов',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 5,
@@ -21,7 +21,7 @@ export default [
       img: '',
       time: 20,
       title: 'ВДНХ Экспо',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default [
       img: '',
       time: 20,
       title: 'Павильон № 34 Российский космос: создавая будущее',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 9,
@@ -37,7 +37,7 @@ export default [
       img: '',
       time: 20,
       title: 'Совиный дом',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export default [
       img: '',
       time: 20,
       title: 'Павильон № 1 Первые в России – Стране возможностей!',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ export default [
       img: '',
       time: 20,
       title: 'Москвариум',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ export default [
       img: '',
       time: 20,
       title: 'Дом культуры',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ export default [
       img: '',
       time: 20,
       title: 'Алые паруса',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 13,
@@ -77,7 +77,7 @@ export default [
       img: '',
       time: 20,
       title: 'Третий Каменский пруд',
-      teg: 'friend',
+      tag: 'friend',
     },
     {
       id: 12,
@@ -85,7 +85,7 @@ export default [
       img: '',
       time: 20,
       title: 'Мичуринский сад',
-      teg: 'friend',
+      tag: 'friend',
     },
     {
       id: 11,
@@ -93,18 +93,18 @@ export default [
       img: '',
       time: 20,
       title: 'Смайл Парк',
-      teg: 'friend',
+      tag: 'friend',
     },
 
-    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', teg: 'family' },
-    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', teg: 'one' },
-    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', teg: 'pair' },
+    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', tag: 'family' },
+    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', tag: 'one' },
+    { id: 4, position: [37.637633, 55.826303], img: '', time: 0, title: 'aly parusa', tag: 'pair' },
     {
       id: 4,
       position: [37.637633, 55.826303],
       img: '',
       time: 0,
       title: 'aly parusa',
-      teg: 'friend',
+      tag: 'friend',
     },
   ]

@@ -9,7 +9,7 @@ export default function App() {
   
   const [tabList, setTabeList] = useState(tabe_data)
 
-  const tabe = (id) => {
+  const onTabe = (id) => {
     setTabeList(prive =>
       prive.map(i =>
         i.id === id
@@ -30,8 +30,8 @@ export default function App() {
               <div className={classNames("box", {
                 ["box__activ"]: i.activ
               })} key={i.id} onClick={() => {
-                tabe(i.id)
-                setTag(i.title)
+                onTabe(i.id)
+                setTag(i.tag)
               }}>{i.text}</div>
             ))
           }

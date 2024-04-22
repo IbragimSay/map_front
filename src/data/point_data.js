@@ -5,7 +5,7 @@ export default [
       img: 'https://cdn.culture.ru/images/4d639fcf-7787-5992-89b3-2b682a74eeb0',
       time: 20,
       title: 'Музей космонавтики',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export default [
       img: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/31/1e/39/the-fountain.jpg?w=1100&h=-1&s=1',
       time: 20,
       title: 'Фонтан Дружба народов',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 5,
@@ -21,7 +21,7 @@ export default [
       img: 'https://regions.kidsreview.ru/sites/default/files/styles/oww/public/12/12/2014_-_1746/vdnh-ekspo.jpg',
       time: 20,
       title: 'ВДНХ Экспо',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default [
       img: 'https://core-pht-proxy.maps.yandex.ru/v1/photos/download?photo_id=JbZ4Sv9YCan8DZnSUsm&image_size=X5L',
       time: 20,
       title: 'Павильон № 34 Российский космос: создавая будущее',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 9,
@@ -37,7 +37,7 @@ export default [
       img: 'https://avatars.mds.yandex.net/get-altay/13091609/2a0000018e2e4fb4bc2aaf869219835814aa/XXXL',
       time: 20,
       title: 'Совиный дом',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export default [
       img: "https://img.29palms.ru/photo/hotels/russia/moscow/vdnkh-main-pavilion/resized/016_Rossiya_Moskva_Central'naya_alleya_i_Glavnyy_pavil'on_VDNH_The_main_pavilion_in_VDNKh_Moscow_Russia_Foto_koromelenayandexru_-_Depositphotos.jpg",
       time: 20,
       title: 'Павильон № 1 Первые в России – Стране возможностей!',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ export default [
       img: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/6e/ad/27/img-20180620-104558-largejpg.jpg?w=1400&h=-1&s=1',
       time: 20,
       title: 'Москвариум',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ export default [
       img: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Moscow%2C_VDNKh%2C_model_House_of_Culture_%2810656153396%29.jpg',
       time: 20,
       title: 'Дом культуры',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 4,
@@ -69,28 +69,28 @@ export default [
       img: 'https://cdn.spbdnevnik.ru/uploads/block/image/836838/__medium_%D0%B0%D0%BB%D1%8B%D0%B5%D0%BF%D0%B0%D1%80%D1%83%D1%81%D0%B0%D1%84%D1%83%D1%84%D0%B0%D0%B5%D0%B2.jpg.jpg',
       time: 20,
       title: 'Алые паруса',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 11,
       position: [55.835471, 37.623444],
       title: 'Смайл Парк',
       img: 'https://avatars.mds.yandex.net/get-altay/2436798/2a0000018201e0723a389b9f93c5e86c790b/XXXL',
-      teg: 'friend',
+      tag: 'friend',
     },
     {
       id: 12,
       position: [55.834452, 37.616686],
       title: 'Мичуринский сад',
       img: 'https://core-pht-proxy.maps.yandex.ru/v1/photos/download?photo_id=KJVNH50QxmAdcW7DYZbZ3g&image_size=XXXL',
-      teg: 'friend',
+      tag: 'friend',
     },
     {
       id: 13,
       position: [55.838392, 37.616377],
       img: 'https://yamoscow.ru/wp-content/uploads/2021/08/Пруд-с-фонтаном-Золотой-колос-на-ВДНХ-1080x720.jpg',
       title: 'Третий Каменский пруд',
-      teg: 'friend',
+      tag: 'friend',
     },
     {
       id: 10,
@@ -98,7 +98,7 @@ export default [
       img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
       time: 20,
       title: 'Главный вход ВДНХ',
-      teg: 'family',
+      tag: 'family',
     },
     {
       id: 10,
@@ -106,7 +106,7 @@ export default [
       img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
       time: 20,
       title: 'Главный вход ВДНХ',
-      teg: 'one',
+      tag: 'one',
     },
     {
       id: 10,
@@ -114,7 +114,7 @@ export default [
       img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
       time: 20,
       title: 'Главный вход ВДНХ',
-      teg: 'pair',
+      tag: 'pair',
     },
     {
       id: 10,
@@ -122,6 +122,6 @@ export default [
       img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
       time: 20,
       title: 'Главный вход ВДНХ',
-      teg: 'friend',
+      tag: 'friend',
     },
   ]
