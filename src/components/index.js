@@ -1,1 +1,1 @@
-export * from './Map';
+export * from '../modules/Map';
