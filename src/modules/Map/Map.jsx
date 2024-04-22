@@ -10,7 +10,7 @@ export function Map({ tagValue }) {
   const [line, setLine] = useState([]);
   const [time, setTime] = useState(0);
 
-  // Функция для вывода получения красив ого вывода времени
+  // Функция для получения красивого времени
   const convertTime = (min) => {
     const hours = Math.floor(min / 60);
     const minuts = Math.floor(min % 60);
