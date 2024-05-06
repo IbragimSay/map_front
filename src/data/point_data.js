@@ -93,6 +93,27 @@ export default [
       tag: 'friend',
     },
     {
+      id: 14,
+      position: [55.828511, 37.637257],
+      img: 'https://vdnh.ru/upload/resize_cache/iblock/e12/1000_424_1/e1271f80faadc5a2d9420c68e66de714.jpg',
+      title: 'Игровая площадка, адаптированная для детей с ограниченными возможностями',
+      tag: 'ovz',
+    },
+    {
+      id: 15,
+      position: [55.832105, 37.622872],
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTg3_9OBPP5S2qiPD3KN6ojTD2HkisgzZ6YzeBGYW3w&s',
+      title: 'Интерактивный музейный комплекс «Буран»',
+      tag: 'ovz',
+    },
+    {
+      id: 16,
+      position: [55.828798, 37.609815],
+      img: 'https://kudamoscow.ru/uploads/065e9caeb35ef071309eb3e39ffcafb9.jpg',
+      title: 'Парк Останкино',
+      tag: 'ovz',
+    },
+    {
       id: 10,
       position: [55.826303, 37.637633],
       img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
@@ -123,5 +144,13 @@ export default [
       time: 20,
       title: 'Главный вход ВДНХ',
       tag: 'friend',
+    },
+    {
+      id: 10,
+      position: [55.826303, 37.637633],
+      img: 'https://um.mos.ru/uploads/house/media/4076/16392ccfaed501.jpg',
+      time: 20,
+      title: 'Главный вход ВДНХ',
+      tag: 'ovz',
     },
   ]

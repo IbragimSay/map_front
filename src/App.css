@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .page {
   margin: auto;
   width: 100%;
@@ -13,8 +14,12 @@
   padding: 0 50px;
   margin-bottom: 40px;
 }
+.page__filters{
+  width: 100%;
+}
 .filter {
-  width: 220px;
+  width: 100%;
+  min-width: 220px;
   height: 300px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
@@ -69,7 +74,28 @@
 .leaflet-control-attribution {
   display: none;
 }
+.prices{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.prices__block{
+  padding: 7px 27px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+.prices__block_activ{
+  background-color: #63C04C;
+  border: none;
+  color: #fff;
+
+}
 
 @media screen and (max-width: 700px){
   .page{
